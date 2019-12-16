@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css'>
+    <script src='aula2-desafionota.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+              <!-- Modal -->
+      <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                        <form>
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationDefault01">Nome Completo:</label>
+                                        <input type="text" class="form-control" id="nome2" placeholder="First name" disabled>
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                        <label for="validationDefault02">RG</label>
+                                        <input type="text" class="form-control" id="rg2" placeholder="Last name"  disabled>
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                        <label for="validationDefault02">CPF</label>
+                                        <input type="text" class="form-control" id="cpf2" placeholder="Last name" disabled>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationDefaultUsername">E-mail</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                            </div>
+                                            <input type="text" class="form-control" id="email2" placeholder="E-mail"
+                                                aria-describedby="inputGroupPrepend2" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-2 mb-3">
+                                        <label for="validationDefault03">Nota 01:</label>
+                                        <input type="text" class="form-control" id="n12" disabled>
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                        <label for="validationDefault04">Nota 2:</label>
+                                        <input type="text" class="form-control" id="n22"  disabled>
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                        <label for="validationDefault05">Nota 3:</label>
+                                        <input type="text" class="form-control" id="n32" disabled>
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                            <label for="validationDefault05">Média:</label>
+                                            <input class="form-control" id="dis_media" type="text" disabled>
+                                    </div>
+                                    <div class="col-md-2 mb-3">
+                                            <label for="validationDefault05">Aprovação:</label>
+                                            <input class="form-control" id="dis_aprovacao" type="text" disabled>
+                                    </div>
+                                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--abrindo o formulário-->
+        <form>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault01">Nome Completo:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="First name" required>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="validationDefault02">RG</label>
+                    <input type="text" class="form-control" id="rg" placeholder="Last name"  required>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="validationDefault02">CPF</label>
+                    <input type="text" class="form-control" id="cpf" placeholder="Last name" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefaultUsername">E-mail</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="email" placeholder="E-mail"
+                            aria-describedby="inputGroupPrepend2" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-2 mb-3">
+                    <label for="validationDefault03">Nota 01:</label>
+                    <input type="text" class="form-control" id="n1" placeholder="Digite a primeira nota" required>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="validationDefault04">Nota 2:</label>
+                    <input type="text" class="form-control" id="n2" placeholder="Digite a segunda nota" required>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="validationDefault05">Nota 3:</label>
+                    <input type="text" class="form-control" id="n3" placeholder="Digite a terceira nota" required>
+                </div>
+                <div class="col-md-2 mb-3">
+                        <label for="validationDefault05">Média:</label>
+                        <input class="form-control" id="dis_media2" type="text" placeholder="Disabled input here..." disabled>
+                </div>
+                <div class="col-md-2 mb-3">
+                        <label for="validationDefault05">Aprovação:</label>
+                        <input class="form-control" id="dis_aprovacao2" type="text" placeholder="aprovação" disabled>
+                </div>
+            </div>
+        
+            <button class="btn btn-primary" type="button" onclick="calc_media()">Calcular média</button>
+            <button class="btn btn-primary" type="button" onclick="mostra_info()" data-toggle="modal" data-target="#modalExemplo">Mostrar informações</button>
+        </form>
+      
+
+
+
+          <script src="js/query.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.js"></script>
+</body>
+</html>
